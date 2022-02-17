@@ -1,12 +1,20 @@
-/* global */
+/* global, 3 types of selectors. 1.class, 2.id, 3.tagname, shorthand for margin/padding works in a clockwise direction. display flex only works for the fist level of children, thats why you create divs around things, write out trees.  */
 *{
     margin:0;
     
 }
+.body-color{
 
+    color:#C5C6C7;
+}
 body{
-
-    font-family: 'Bebas Neue', sans-serif;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.project-body{
+    display:flex;
+    flex-direction: column;
+    
 }
 h1,h2,h3,h4{
     text-align:center;
@@ -17,11 +25,69 @@ p{
     line-height:2;
 }
 /* utilities */
+.container{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px rgb(173,173, 173);
+    border-radius:10px;
+}
 
+/* 
+.project-container{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px rgb(173,173, 173);
+    border-radius:10px;
+}
+
+ */
+
+ .project-container{
+    display:flex;
+    flex-direction:row-reverse;
+    /* border:2px solid black; */
+    /* margin-bottom:10px; */
+    /* border:3px solid #45A29E; */
+    
+ }
+
+ .project-container ul{
+      width:30%; 
+      padding-top:20px;
+     
+     
+     
+     
+    
+ }
+ .project-container ul li{
+     margin-bottom: 5px;
+     
+     
+     
+     
+     
+ }
+ .project-container p{
+     text-align:justify;
+     width:50%;
+     margin-left:25%;
+     margin-top:20px;
+     
+ }
 /* header */
 header{
-    background-color:aquamarine;
+    color:#66FCF1;
+    background-color:#0B0C10;
     height:25vh;
+    border:3px solid #45A29E;
+    text-shadow: 2px 3px 2px #45A29E;
 }
 
 /* Menu */
@@ -30,11 +96,14 @@ nav{
     height:5vh;
     text-align:center;
     padding:10px;
+    margin:2px 0px 0px 0px;
+    border:3px solid #45A29E;
 }
 nav a{
-    color:white;
+    color:#66FCF1;
     text-decoration:none;
     margin-right:30px;
+    
 }
 
 /* when you hover the cursor over the nav items below */
@@ -44,25 +113,95 @@ nav a:hover{
 }
 
 /* main */
-main{
-    background-color:bisque;
-    padding:20px;
-    height:50vh;
+.project-main{
+   display:flex;
+   flex-direction:column;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px #45A29E;
+    border-radius:10px;
 }
-aside{
-    background-color: rgb(151, 94, 23);
+main{
+  
+    background-color:#0B0C10;
+   height:60vh;
+    padding:20px;
+    width:50%;
+    margin:2px 0px 2px 0px;
+    border:3px solid #45A29E;
+    color:#C5C6C7;
+    border-radius:10px;
+  
     
 }
+.contact-main{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px #45A29E;
+    border-radius:10px;
+    text-align: center;
+}
+.contact-main p a{
+    text-decoration: none;
+}
+ 
+aside{
+    background-color:#0B0C10;
+    width: 50%;
+    margin:2px 0px 2px 2px;
+    border:3px solid #45A29E;
+    border-radius:10px;
+    color:#C5C6C7;
+    
+    
+   
+    
+}
+/*
 aside ol{
     margin-left:30%;
+    width:25%;
 
 }
+
 aside ul{
     margin-left:20%;
+    width: 30%;
    
 }
+ */
 /* footer */
-footer{
+
+
+.footer-container {
     text-align:center;
-    background-color:aquamarine;
+    color:#66FCF1;
+    background-color:#0B0C10;
+    margin:2px 0px 0px 0px;
+    /* height:5vh; */
+    padding-top: 10px;
+    border:3px solid #45A29E;
+    
+    
+    
+}
+.footer-container a{
+    text-decoration: none;
+    color:#66FCF1;
+    word-spacing:6px;
+    
+}
+
+
+.index-container{
+    display:flex;
+    
+    
+
 }
