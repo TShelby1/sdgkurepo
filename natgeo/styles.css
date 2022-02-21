@@ -1,0 +1,89 @@
+/* global good to reset the margins */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* 100% makes it take 100% of the windows, nothing more */
+img{
+    max-width: 100%;
+}
+/* utilities */
+
+/* nav */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:38px;
+}
+.nav-bar img{  
+    height:35px;
+    margin-left:10px
+}
+
+.links-container{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 300px;
+    align-items: center;
+}
+.links-container a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+.links-container .subs-link{
+    background-color: black;
+    padding: 15px;
+    color:white;
+}
+/* add the animation to make the yellow go left to right */
+.links-container .subs-link:hover{
+    background-color: #ffcc00;
+    color:black;
+}
+.links-container a:last-of-type{
+    margin-right:20px;
+}
+.search-link, .renew-link, .menu-link, .logo-bg{
+    display:none
+}
+
+
+/* header */
+.header{
+    display:flex;
+    height:250px;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color:white;
+    justify-content: space-evenly;
+    letter-spacing: 3px;
+}
+.header-text{
+    font-size: 35px;
+    line-height: 1.5;
+}
+.header-subtext{
+    margin-left:30px;
+    margin-right:30px;
+}
+.header-subtext span{
+    border-bottom:4px solid #ffcc00;
+    text-decoration: none;
+}
+.header .small-line{
+    background-color: #ffcc00;
+    width:60px;
+    height: 4px;
+    line-height: 0px;
+    margin:20px auto 0;
+}
+/* main */
